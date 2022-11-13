@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.forms import Textarea
 from django.db.models.fields import TextField
 
-from .models import Survey, Question, QuestionChoice, Answer
+from .models import SurveyModel, QuestionModel, QuestionChoiceModel, AnswerModel
 
 
 # =====================================================================
@@ -24,13 +24,13 @@ class _FlatTextInline(admin.StackedInline):
 
 
 class QuestionInline(_FlatTextInline):
-    model = Question
+    model = QuestionModel
     fields = (("name", "order", "type"), )
     extra = 0
 
 
 class QuestionChoiceInline(_FlatTextInline):
-    model = QuestionChoice
+    model = QuestionChoiceModel
     fields = (("name", "order"), )
     extra = 0
 
@@ -38,7 +38,7 @@ class QuestionChoiceInline(_FlatTextInline):
 # =====================================================================
 
 
-@admin.register(Survey)
+@admin.register(SurveyModel)
 class SurveyAdmin(_FlatText):
     fields = (
         "name",
@@ -48,7 +48,7 @@ class SurveyAdmin(_FlatText):
     inlines = [QuestionInline, ]
 
 
-@admin.register(Question)
+@admin.register(QuestionModel)
 class QuestionAdmin(_FlatText):
     fields = (
         ("survey", "order", "type"),
@@ -57,7 +57,7 @@ class QuestionAdmin(_FlatText):
     inlines = [QuestionChoiceInline, ]
 
 
-@admin.register(QuestionChoice)
+@admin.register(QuestionChoiceModel)
 class QuestionChoiceAdmin(_FlatText):
     fields = (
         ("question", "order"),
@@ -65,7 +65,7 @@ class QuestionChoiceAdmin(_FlatText):
     )
 
 
-@admin.register(Answer)
+@admin.register(AnswerModel)
 class AnswerAdmin(_FlatText):
     fields = (
         ("user", "question"),

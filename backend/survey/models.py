@@ -9,22 +9,21 @@ from django.db.models import (
     IntegerField,
     CharField,
     UUIDField,
-    BooleanField,
 )
 from django.db.models.constraints import CheckConstraint, UniqueConstraint
 from django.core.validators import MinValueValidator
 
 
 __all__ = [
-    "Survey",
-    "Question",
-    "QuestionChoice",
-    "Answer",
-    "AnswerChoice",
+    "SurveyModel",
+    "QuestionModel",
+    "QuestionChoiceModel",
+    "AnswerModel",
+    "AnswerChoiceModel",
 ]
 
 
-class Survey(Model):
+class SurveyModel(Model):
     name = TextField(
         verbose_name="Survey name",
         null=False,
@@ -63,14 +62,14 @@ class Survey(Model):
         )
 
 
-class Question(Model):
+class QuestionModel(Model):
     class Types(Enum):
         STR = "string"
         SIN = "single choice"
         MUL = "multiple choice"
 
     survey = ForeignKey(
-        Survey,
+        SurveyModel,
         on_delete=CASCADE,
         verbose_name="Survey",
         related_name="questions",
@@ -109,9 +108,9 @@ class Question(Model):
         )
 
 
-class QuestionChoice(Model):
+class QuestionChoiceModel(Model):
     question = ForeignKey(
-        Question,
+        QuestionModel,
         on_delete=CASCADE,
         verbose_name="Question to which is attached",
         related_name="choices",
@@ -141,13 +140,13 @@ class QuestionChoice(Model):
         return f"\"{self.name[:30]}\" || [{self.question.name[:20]}]"
 
 
-class Answer(Model):
+class AnswerModel(Model):
     user = UUIDField(
         verbose_name="User identifier",
         null=False,
     )
     question = ForeignKey(
-        Question,
+        QuestionModel,
         on_delete=CASCADE,
         verbose_name="Question to which is answered",
         related_name="answers",
@@ -158,7 +157,7 @@ class Answer(Model):
         null=True,
     )
     choice = ManyToManyField(
-        QuestionChoice,
+        QuestionChoiceModel,
         verbose_name="Answer (if choice)",
         related_name="+",
     )
@@ -178,4 +177,4 @@ class Answer(Model):
         )
 
 
-AnswerChoice = Answer.choice.through
+AnswerChoiceModel = AnswerModel.choice.through
