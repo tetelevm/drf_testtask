@@ -2,7 +2,14 @@ from django.contrib import admin
 from django.forms import Textarea
 from django.db.models.fields import TextField
 
-from .models import SurveyModel, QuestionModel, QuestionChoiceModel, AnswerModel
+from .models import (
+    SurveyModel,
+    QuestionModel,
+    QuestionChoiceModel,
+    UserTokenModel,
+    AnswerModel,
+    AnswerQuestionModel,
+)
 
 
 # =====================================================================
@@ -20,7 +27,7 @@ class _FlatTextInline(admin.StackedInline):
     }
 
 
-# =====================================================================
+# === inlines =========================================================
 
 
 class QuestionInline(_FlatTextInline):
@@ -35,13 +42,13 @@ class QuestionChoiceInline(_FlatTextInline):
     extra = 0
 
 
-# =====================================================================
+# === registration ====================================================
 
 
 @admin.register(SurveyModel)
 class SurveyAdmin(_FlatText):
     fields = (
-        "name",
+        ("name", "is_hidden"),
         "description",
         ("date_start", "date_end"),
     )
@@ -65,9 +72,25 @@ class QuestionChoiceAdmin(_FlatText):
     )
 
 
+# # To create objects through the admin panel,
+# # add `date_issuance(..., editable=True)` to `UserTokenModel`
+# # and uncomment the registration here
+# # ------
+# @admin.register(UserTokenModel)
+# class UserTokenAdmin(_FlatText):
+#     fields = (
+#         ("date_issuance",),
+#     )
+
+
 @admin.register(AnswerModel)
 class AnswerAdmin(_FlatText):
+    fields = (("user", "survey"),)
+
+
+@admin.register(AnswerQuestionModel)
+class AnswerQuestionAdmin(_FlatText):
     fields = (
-        ("user", "question"),
+        ("answer", "question"),
         ("text", "choice"),
     )
