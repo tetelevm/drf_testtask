@@ -1,0 +1,82 @@
+[
+{
+    "model": "survey.questionmodel",
+    "pk": 1,
+    "fields": {
+        "survey": 1,
+        "name": "How are you doing?",
+        "order": 0,
+        "type": "STR"
+    }
+},
+{
+    "model": "survey.questionmodel",
+    "pk": 2,
+    "fields": {
+        "survey": 2,
+        "name": "The most delicious dish?",
+        "order": 0,
+        "type": "STR"
+    }
+},
+{
+    "model": "survey.questionmodel",
+    "pk": 3,
+    "fields": {
+        "survey": 2,
+        "name": "Are you a vegetarian?",
+        "order": 1,
+        "type": "SIN"
+    }
+},
+{
+    "model": "survey.questionmodel",
+    "pk": 4,
+    "fields": {
+        "survey": 2,
+        "name": "Choose delicious drinks:",
+        "order": 2,
+        "type": "MUL"
+    }
+},
+{
+    "model": "survey.questionmodel",
+    "pk": 5,
+    "fields": {
+        "survey": 3,
+        "name": "Did you answer that question?",
+        "order": 0,
+        "type": "SIN"
+    }
+},
+{
+    "model": "survey.questionmodel",
+    "pk": 6,
+    "fields": {
+        "survey": 4,
+        "name": "The best country:",
+        "order": 0,
+        "type": "SIN"
+    }
+},
+{
+    "model": "survey.questionmodel",
+    "pk": 7,
+    "fields": {
+        "survey": 4,
+        "name": "What do you like about it?",
+        "order": 1,
+        "type": "MUL"
+    }
+},
+{
+    "model": "survey.questionmodel",
+    "pk": 8,
+    "fields": {
+        "survey": 4,
+        "name": "What don't you like about it?",
+        "order": 2,
+        "type": "MUL"
+    }
+}
+]

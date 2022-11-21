@@ -1,0 +1,83 @@
+[
+{
+    "model": "survey.answermodel",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "survey": 1,
+        "date_answer": "{%TODAY-0%}"
+    }
+},
+{
+    "model": "survey.answermodel",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "survey": 4,
+        "date_answer": "{%TODAY-0%}"
+    }
+},
+{
+    "model": "survey.answermodel",
+    "pk": 3,
+    "fields": {
+        "user": 2,
+        "survey": 1,
+        "date_answer": "{%TODAY-25%}"
+    }
+},
+{
+    "model": "survey.answermodel",
+    "pk": 4,
+    "fields": {
+        "user": 2,
+        "survey": 2,
+        "date_answer": "{%TODAY-25%}"
+    }
+},
+{
+    "model": "survey.answermodel",
+    "pk": 5,
+    "fields": {
+        "user": 3,
+        "survey": 1,
+        "date_answer": "{%TODAY+5%}"
+    }
+},
+{
+    "model": "survey.answermodel",
+    "pk": 6,
+    "fields": {
+        "user": 3,
+        "survey": 4,
+        "date_answer": "{%TODAY+4%}"
+    }
+},
+{
+    "model": "survey.answermodel",
+    "pk": 7,
+    "fields": {
+        "user": 4,
+        "survey": 1,
+        "date_answer": "{%TODAY-0%}"
+    }
+},
+{
+    "model": "survey.answermodel",
+    "pk": 8,
+    "fields": {
+        "user": 4,
+        "survey": 4,
+        "date_answer": "{%TODAY+2%}"
+    }
+},
+{
+    "model": "survey.answermodel",
+    "pk": 9,
+    "fields": {
+        "user": 5,
+        "survey": 2,
+        "date_answer": "{%TODAY-40%}"
+    }
+}
+]

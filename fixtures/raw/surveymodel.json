@@ -1,0 +1,46 @@
+[
+{
+    "model": "survey.surveymodel",
+    "pk": 1,
+    "fields": {
+        "name": "How are you?",
+        "description": "You can tell  here how you're doing",
+        "date_start": "{%TODAY-31%}",
+        "date_end": "{%TODAY+10%}",
+        "is_hidden": false
+    }
+},
+{
+    "model": "survey.surveymodel",
+    "pk": 2,
+    "fields": {
+        "name": "The tastiest food",
+        "description": "A survey about what food tastes the best.",
+        "date_start": "{%TODAY-46%}",
+        "date_end": "{%TODAY-21%}",
+        "is_hidden": false
+    }
+},
+{
+    "model": "survey.surveymodel",
+    "pk": 3,
+    "fields": {
+        "name": "Some future survey",
+        "description": "A survey that will take place in the distant future.",
+        "date_start": "{%TODAY+30%}",
+        "date_end": "{%TODAY+40%}",
+        "is_hidden": false
+    }
+},
+{
+    "model": "survey.surveymodel",
+    "pk": 4,
+    "fields": {
+        "name": "The most beautiful country",
+        "description": "Many countries are beautiful. But which one is the most?",
+        "date_start": "{%TODAY-2%}",
+        "date_end": "{%TODAY+5%}",
+        "is_hidden": true
+    }
+}
+]

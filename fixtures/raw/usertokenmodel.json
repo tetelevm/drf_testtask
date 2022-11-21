@@ -1,0 +1,42 @@
+[
+{
+    "model": "survey.usertokenmodel",
+    "pk": 1,
+    "fields": {
+        "token": "1HkExYGjQ3QWgukKGM8H28LqwWVAC180Uy15",
+        "date_issuance": "{%TODAY-1%}"
+    }
+},
+{
+    "model": "survey.usertokenmodel",
+    "pk": 2,
+    "fields": {
+        "token": "RSBcWrv9mAbVfPBFpZNZiHCMZOHEiJyLjsMH",
+        "date_issuance": "{%TODAY-26%}"
+    }
+},
+{
+    "model": "survey.usertokenmodel",
+    "pk": 3,
+    "fields": {
+        "token": "o0fV5LOPpimcfQDBDvT7dGd76kj0BRI3CFKd",
+        "date_issuance": "{%TODAY+4%}"
+    }
+},
+{
+    "model": "survey.usertokenmodel",
+    "pk": 4,
+    "fields": {
+        "token": "JUswqRhjXZ8DHi92k4Gbkd7tIDwTf8c4zF0T",
+        "date_issuance": "{%TODAY-0%}"
+    }
+},
+{
+    "model": "survey.usertokenmodel",
+    "pk": 5,
+    "fields": {
+        "token": "yUIRk8DarBp4nWm543OC08vDMzrMNe95NAkT",
+        "date_issuance": "{%TODAY-41%}"
+    }
+}
+]

@@ -85,7 +85,7 @@ class QuestionChoiceAdmin(_FlatText):
 
 @admin.register(AnswerModel)
 class AnswerAdmin(_FlatText):
-    fields = (("user", "survey"),)
+    fields = ("user", "survey")
 
 
 @admin.register(AnswerQuestionModel)

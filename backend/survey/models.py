@@ -130,7 +130,6 @@ class QuestionModel(Model):
         indexes = [
             Index(fields=["survey", "order"]),
         ]
-        order_with_respect_to = "survey"
 
     def __str__(self):
         return (
@@ -170,7 +169,6 @@ class QuestionChoiceModel(Model):
         indexes = [
             Index(fields=["question", "order"]),
         ]
-        order_with_respect_to = "question"
 
     def __str__(self):
         return f"\"{self.name[:30]}\" : {self.question.name[:20]}"
@@ -239,7 +237,9 @@ class AnswerModel(Model):
         indexes = [
             Index("date_answer", name="date_answer_idx"),
         ]
-        order_with_respect_to = "survey"
+        constraints = [
+            UniqueConstraint("user", "survey", name="answer_for_survey"),
+        ]
 
     def __str__(self):
         return (
@@ -291,7 +291,6 @@ class AnswerQuestionModel(Model):
         constraints = [
             UniqueConstraint("answer", "question", name="answer_for_question"),
         ]
-        order_with_respect_to = "answer"
 
     def __str__(self):
         return f"{self.answer.user.token[:16]} : {self.question}"

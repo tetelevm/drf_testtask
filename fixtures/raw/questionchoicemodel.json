@@ -1,0 +1,380 @@
+[
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 1,
+    "fields": {
+        "question": 3,
+        "name": "Yes",
+        "order": 0
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 2,
+    "fields": {
+        "question": 3,
+        "name": "No",
+        "order": 1
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 3,
+    "fields": {
+        "question": 4,
+        "name": "Milk",
+        "order": 0
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 4,
+    "fields": {
+        "question": 4,
+        "name": "Apple juice",
+        "order": 1
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 5,
+    "fields": {
+        "question": 4,
+        "name": "Borjomi",
+        "order": 2
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 6,
+    "fields": {
+        "question": 4,
+        "name": "Tea",
+        "order": 3
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 7,
+    "fields": {
+        "question": 4,
+        "name": "Coffee",
+        "order": 4
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 8,
+    "fields": {
+        "question": 4,
+        "name": "Pepsi-Cola",
+        "order": 5
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 9,
+    "fields": {
+        "question": 4,
+        "name": "Coca-Cola",
+        "order": 6
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 10,
+    "fields": {
+        "question": 5,
+        "name": "Yes",
+        "order": 0
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 11,
+    "fields": {
+        "question": 5,
+        "name": "No",
+        "order": 1
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 12,
+    "fields": {
+        "question": 5,
+        "name": "Bang-bang, I'm Batman",
+        "order": 2
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 13,
+    "fields": {
+        "question": 6,
+        "name": "Armenia",
+        "order": 0
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 14,
+    "fields": {
+        "question": 6,
+        "name": "Austria",
+        "order": 1
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 15,
+    "fields": {
+        "question": 6,
+        "name": "Finland",
+        "order": 2
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 16,
+    "fields": {
+        "question": 6,
+        "name": "France",
+        "order": 4
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 17,
+    "fields": {
+        "question": 6,
+        "name": "Georgia",
+        "order": 5
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 18,
+    "fields": {
+        "question": 6,
+        "name": "Germany",
+        "order": 6
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 19,
+    "fields": {
+        "question": 6,
+        "name": "Greece",
+        "order": 7
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 20,
+    "fields": {
+        "question": 6,
+        "name": "Iceland",
+        "order": 8
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 21,
+    "fields": {
+        "question": 6,
+        "name": "Italy",
+        "order": 9
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 22,
+    "fields": {
+        "question": 6,
+        "name": "Montenegro",
+        "order": 10
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 23,
+    "fields": {
+        "question": 6,
+        "name": "Poland",
+        "order": 11
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 24,
+    "fields": {
+        "question": 6,
+        "name": "Slovakia",
+        "order": 12
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 25,
+    "fields": {
+        "question": 6,
+        "name": "Spain",
+        "order": 13
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 26,
+    "fields": {
+        "question": 6,
+        "name": "Switzerland",
+        "order": 14
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 27,
+    "fields": {
+        "question": 7,
+        "name": "Climate",
+        "order": 0
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 28,
+    "fields": {
+        "question": 7,
+        "name": "Prices",
+        "order": 1
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 29,
+    "fields": {
+        "question": 7,
+        "name": "History",
+        "order": 2
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 30,
+    "fields": {
+        "question": 7,
+        "name": "People",
+        "order": 3
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 31,
+    "fields": {
+        "question": 7,
+        "name": "Laws",
+        "order": 4
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 32,
+    "fields": {
+        "question": 7,
+        "name": "Standard of living",
+        "order": 5
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 33,
+    "fields": {
+        "question": 7,
+        "name": "Liberty",
+        "order": 6
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 34,
+    "fields": {
+        "question": 7,
+        "name": "Culture",
+        "order": 7
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 35,
+    "fields": {
+        "question": 8,
+        "name": "Climate",
+        "order": 0
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 36,
+    "fields": {
+        "question": 8,
+        "name": "Prices",
+        "order": 1
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 37,
+    "fields": {
+        "question": 8,
+        "name": "History",
+        "order": 2
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 38,
+    "fields": {
+        "question": 8,
+        "name": "Laws",
+        "order": 3
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 39,
+    "fields": {
+        "question": 8,
+        "name": "People",
+        "order": 4
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 40,
+    "fields": {
+        "question": 8,
+        "name": "Standart of living",
+        "order": 5
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 41,
+    "fields": {
+        "question": 8,
+        "name": "Liberty",
+        "order": 6
+    }
+},
+{
+    "model": "survey.questionchoicemodel",
+    "pk": 42,
+    "fields": {
+        "question": 8,
+        "name": "Culture",
+        "order": 7
+    }
+}
+]
