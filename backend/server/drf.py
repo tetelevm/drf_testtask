@@ -82,3 +82,5 @@ class ProjectView(APIView, ABC, metaclass=ProjectViewMeta):
     serializer_class: Type[Serializer]
     queryset: QuerySet
     filter_class: Type[FilterSet] | None = None
+
+    permission_classes = ()
